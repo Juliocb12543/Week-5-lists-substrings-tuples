@@ -16,22 +16,41 @@ print(newSentence.rindex("practice"))
 ###############################################Review############################################################
 #####################################challenge 1################################################################
 # Create a list with 5 elements, inside the variable my_list. You can include strings, booleans, numbers, etc.
-my_list = ["bay","ddaa", 34, 56]
+my_list = ["bay","ddaa", 34, 56, 78, 89, 102]
+# append adds to the end of the list
+my_list.append("jewelry")
+print(my_list)
+my_list.pop()
+# pop() removes from the end
+print(my_list)
+my_list.remove("ddaa")
+# removes an item at a certain index
+print(my_list)
+my_list.insert(3, "bobba bobba")
+print(my_list)
+my_list.insert(1, "far")
+my_list.insert(2, "yes")
+print(my_list)
 
-
+my_list2 = ["today", "again", 34, 65, 98]
+#join my_list1 with my_list2 in a new list
+# call it my_list3 and print it out
+my_list3 = (my_list + my_list2)
+#my_list3 = my_list.extend(my_list2)
+print(my_list3)
 # Add the element "motorcycle" to the following list of means of transportation:
 
-# transportation_means = ["plane", "car", "ship", "bicycle"]
-# transportation_means.append("motorcycle")
+#transportation_means = ["plane", "car", "ship", "bicycle"]
+#transportation_means.append("motorcycle")
 # #append adds an element to the end
-# print(transportation_means)
-# transportation_means.remove("car")
-# print(transportation_means)
-# newTrans = transportation_means.pop()
+#print(transportation_means)
+#transportation_means.remove("car")
+#print(transportation_means)
+#newTrans = transportation_means.pop()
 # #pop removes the last element
-# print("my new trans is " +newTrans)
-# transportation_means.insert(1,"tesla")
-# print(transportation_means)
+#print("my new trans is " +newTrans)
+#transportation_means.insert(1,"tesla")
+#print(transportation_means)
 # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
 
 # here are two lists:
@@ -39,30 +58,34 @@ luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
 friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
 # instructions:
 ######join both lists together in a new list
-
+new_list = luckyNumbers + friends
 ###### print the new list out
-#print(newList2)
+print(new_list)
 ###### print out the first item in the list
-
+print(new_list[0])
 ###### remove the last item of the new list
-
+new_list.pop()
 ###### print the new list out without the last item
-
+print(new_list)
 ###### add three more items to the end of the list
-
+new_list.append("toby")
+new_list.append("John")
+new_list.append("tom")
 ###### print the last item in the new list
-
+print(new_list[-1])
 ###### sort the list
-
+luckyNumbers.sort(reverse = True)
+print(luckyNumbers)
 ###### find a way to insert a new item at the 3rd position of the list
-
+new_list.insert(2, "hello")
 ###### print the new list out
-
+print(new_list)
 ##### reverse the list
-
+new_list.reverse()
 ###### print the new list out
+print(new_list)
 ###### print out the length of the new list
-
+print(len(new_list))
 #####################################challenge 2#######################################################
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
 word_list = ["Simple", "is", "better", "than", "complex."]
